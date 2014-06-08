@@ -9,6 +9,7 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 
+from tornado.log import access_log
 from tornado.options import define, options
 
 define("port", default=8888, help="run on the given port", type=int)
@@ -29,6 +30,9 @@ settings = {
     "static_path": os.path.join(os.path.dirname(__file__), "static"),
     "template_path": os.path.join(os.path.dirname(__file__), "templates"),
 }
+
+# Set access log level to WARNING
+access_log.setLevel(30)
 
 if __name__ == '__main__':
     tornado.options.parse_command_line()
