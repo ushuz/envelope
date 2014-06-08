@@ -1,0 +1,68 @@
+html {
+    font-family: "Lucida Grande", "Helvetica Neue", Calibri, sans-serif;
+    font-size: 1.25em;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    max-width: 480px;
+    margin: auto;
+}
+
+.fin {
+    color: #ccc;
+    font-size: .6em;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+#contact-list li {
+    display: inline-block;
+    margin: 0 .3em;
+}
+
+.contact-icon {
+    width: 16px;
+}
+
+.chn {
+    font-size: .8em;
+    font-family: "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei";
+}
+
+#portfolio-list {
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+#portfolio-list li {
+    border-bottom: 1px #ccc dotted;
+}
+
+#portfolio-list li:first-child {
+    border-top: 1px #ccc dotted;
+}
+
+.project-name {
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    /*font-weight: bold;*/
+    margin-top: 15px;
+}
+
+.project-desc {
+    font-size: 0.9em;
+}
