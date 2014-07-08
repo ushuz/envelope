@@ -19,15 +19,15 @@ a:hover {
 }
 
 .main {
-    max-width: 480px;
     margin: auto;
+    max-width: 480px;
 }
 
 .fin {
     color: #ccc;
     font-size: .6em;
-    text-align: center;
     margin: 40px 0 20px 0;
+    text-align: center;
 }
 
 #contact-list li {
@@ -65,4 +65,25 @@ a:hover {
 
 .project-desc {
     font-size: 0.9em;
+}
+
+#skills li {
+    margin: 10px 0;
+    padding: 10px 40px 10px 10px;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 2px;
+    display: inline-block;
+    float: right;
+    height: 24px;
+    width: 340px;
+}
+
+.progress span {
+    background: #000;
+    border-radius: 2px;
+    display: inline-block;
+    height: 100%;
 }
