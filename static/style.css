@@ -1,6 +1,7 @@
 html {
     font-family: "Lucida Grande", "Helvetica Neue", Calibri, sans-serif;
     font-size: 1.25em;
+    min-width: 320px;
 }
 
 ol, ul {
@@ -23,6 +24,12 @@ a:hover {
     max-width: 480px;
 }
 
+@media (max-width: 533px) {
+    .main {
+      max-width: 90%;
+    }
+}
+
 .fin {
     color: #ccc;
     font-size: .6em;
@@ -36,7 +43,7 @@ a:hover {
 }
 
 .contact-icon {
-    width: 16px;
+    width: 24px;
 }
 
 .chn {
@@ -78,7 +85,19 @@ a:hover {
     display: inline-block;
     float: right;
     height: 24px;
-    width: 340px;
+    width: 70%;
+}
+
+@media (max-width: 414px) {
+  .progress {
+    width: 65%;
+  }
+}
+
+@media (max-width: 360px) {
+  .progress {
+    width: 60%;
+  }
 }
 
 .progress span {
