@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Monument - Noven</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #38bfec;
+      color: #fff;
+      font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Arial, STHeiti, SimHei, sans-serif;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #logo {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAACWCAMAAADHTy5XAAAAqFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8j1z1tAAAAN3RSTlMA+wjABQIQGPH3oIAMQCDh6xPRcGAwRdrGkFAcdbFqO+Yk1vPtpq0otpaGe0vKmotkUzbeLFhbqn1aYQAAC59JREFUeAHs0DEBAAAIBCGX61/ZIA8ROAAAAAAAAAAAAAAAAAAAAGBXJeHZOc/tVpFlj3eTg0QAgXLOwbKC7Hr/N7tzzj57jSloqjGrPTN3ze8zVpX/1RXoBv5ShUytY8VxbAfLZTAe23FHM/4NyV+nkGHPb6fjdqonzzCKNi78h1Afjtj/GyzGtH+KQoadD9/CNedQwvEC9hP0pv+1Nu1KeDtOtwNd9zMmydj6zP2T7/mzyS1glvZ3V8j8w9jKBSFDizWnmw51PYQ/SHQvpWTOEvgf7o0Mx/W3r2FXJhof57eVAw6AC7Dh8Hb9zF+aMoXao43v2wWHOsKMNSIbJuVlVJfamQO/4dN6sbTHjn9RgvrnHpPVAjB9/XRZKlGoPdp+pq+Bwmlgz0pDgdM9iXgAvFm1+ZF5hZXq1V58Oa6gEt4/5LH28wqRWPdDBDTy9izfgTJEidHhC0+b1WCfkb+jGl+OEQchzjQ1f1ohujSmfQ5SJBaToTocRInJ4CubZZ3H8wMOMhMQjxZA8JzYP6sQaW1C+oylpFtzc7d9+IqbMzHa5xMQAatkf+UyKqZj9QpJY89CkCdgFD3newvJgwITjQnpnNeA6FY38z5IEW3H6hWSRBsl0ACPEXiyqU384SGoawtcKiCzCGThM0u9QlK8DhyaEMjHo1lEfLRoRwYTYescEBkrYZ4XIE90Uq+QDJ2TC41I5ePRbCWN0JK92kzE4wl0U7dnG2iEvlevEInZDaEZiWQ8mjvuoOFHmCLGzZFope8RNIMfluoVorA9DhTyGZlCE5ygtmbxrS1sIS7plPHBoTHJWLVC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) no-repeat;
+      background-size: cover;
+      height: 75px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="logo"></div>
+  <div>2012 - 2015</div>
+</body>
+</html>

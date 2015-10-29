@@ -20,8 +20,14 @@ class MainHandler(tornado.web.RequestHandler):
         self.render("index.html")
 
 
+class NovenHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("noven.html")
+
+
 handlers = [
     (r"/", MainHandler),
+    (r"/noven", NovenHandler),
 ]
 
 settings = {
