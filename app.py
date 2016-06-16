@@ -3,7 +3,6 @@
 
 import os
 
-import tornado.autoreload
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
