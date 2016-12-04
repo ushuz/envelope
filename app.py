@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-#  -*-  coding: utf-8  -*-
+# coding: utf-8
 
 import os
 
@@ -30,8 +29,9 @@ handlers = [
 ]
 
 settings = {
-    "debug": True,
+    "debug": os.getenv('ENV') == 'dev',
     "gzip": True,
+    "static_url_prefix": os.getenv('ENVELOPE_STATIC_URL_PREFIX', '/static/'),
     "static_path": os.path.join(os.path.dirname(__file__), "static"),
     "template_path": os.path.join(os.path.dirname(__file__), "templates"),
 }
