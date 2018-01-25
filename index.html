@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>ushuz's</title>
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAQMAAACQp+OdAAAABlBMVEUAAAD///+l2Z/dAAAAG0lEQVQoz2OgK+D/z8Dw/8MoAzcDCChm0BMAACK9h3mwQvwSAAAAAElFTkSuQmCC">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+html {
+  font-family: "Lucida Grande", "Helvetica Neue", Calibri, sans-serif;
+  font-size: 1.25em;
+  min-width: 320px;
+}
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.main {
+  margin: auto;
+  max-width: 480px;
+}
+@media (max-width: 533px) {
+  .main {
+    max-width: 90%;
+  }
+}
+.fin {
+  color: #ccc;
+  font-size: .6em;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+#contact-list li {
+  display: inline-block;
+  margin: 0 .3em;
+}
+.contact-icon {
+  width: 24px;
+}
+.chn {
+  font-size: .8em;
+  font-family: "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei";
+}
+#portfolio-list {
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+#portfolio-list li {
+  border-bottom: 1px #ccc dotted;
+}
+#portfolio-list li:first-child {
+  border-top: 1px #ccc dotted;
+}
+.project-name {
+  font-family: Georgia, serif;
+  font-size: 1.1em;
+  /*font-weight: bold;*/
+  margin-top: 15px;
+}
+.project-desc {
+  font-size: 0.9em;
+}
+#skills li {
+  margin: 10px 0;
+  padding: 10px;
+}
+.progress {
+  background: #ddd;
+  border-radius: 2px;
+  display: inline-block;
+  float: right;
+  height: 24px;
+  width: 70%;
+}
+@media (max-width: 414px) {
+  .progress {
+    width: 65%;
+  }
+}
+@media (max-width: 360px) {
+  .progress {
+    width: 60%;
+  }
+}
+.progress span {
+  background: #000;
+  border-radius: 2px;
+  display: inline-block;
+  height: 100%;
+}
+  </style>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-69604784-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div class="main">
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi, I'm <b>ushuz</b> online, <b>John Hu</b> (<b class="chn">胡<span title="shù" style="cursor:help;border-bottom:1px dotted;">澍</span>拯</b>) in the real world.</p>
+      <p>I'm fond of simple and adorable stuff. Building things with Python and other tools I like always makes me thrilled.</p>
+      <p>I believe technology smooths our lives.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><div class="progress"><span style="width:75%"></span></div><span class="skill">Python</span></li>
+        <li><div class="progress"><span style="width:50%"></span></div><span class="skill">JavaScript</span></li>
+        <li><div class="progress"><span style="width:45%"></span></div><span class="skill">CSS</span></li>
+      </ul>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <ul id="portfolio-list">
+        <li>
+          <div class="project-name"><a href="https://github.com/ushuz/letsencrypt">letsencrypt</a></div>
+          <div class="project-desc"><p>Yet another simple <a href="https://letsencrypt.org/" rel="nofollow" target="_blank">Let's Encrypt</a> client.</p></div>
+        </li>
+        <li>
+          <div class="project-name"><a href="https://github.com/ushuz/autumn">autumn</a></div>
+          <div class="project-desc"><p>A <b>Pythonic</b> MySQL ORM, almost.</p></div>
+        </li>
+        <li>
+          <div class="project-name"><a href="/noven">Noven</a></div>
+          <div class="project-desc"><p>A Tornado-based JWXT enhancement including SMS notification, Weixin support, mobile-friendly UI, etc. Available in BJFU and ZJU.</p></div>
+        </li>
+        <li>
+          <div class="project-name"><a href="https://github.com/ushuz/weixin-simulator">weixin-simulator</a></div>
+          <div class="project-desc"><p>A tkinter GUI used for Weixin MP development.</p></div>
+        </li>
+        <li>
+          <div class="project-name"><a href="https://github.com/ushuz/mockingbird">mockingbird</a></div>
+          <div class="project-desc"><p>An AngularJS-based Weixin simulator.</p></div>
+        </li>
+        <li>
+          <div class="project-name"><a href="https://github.com/ushuz/autolecture">autolecture</a></div>
+          <div class="project-desc"><p>Generate Outlook appointments according to class timetable. My first work written in Python.</p></div>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul id="contact-list">
+        <li>
+          <a href="mailto://hszqqq12@gmail.com" title="hszqqq12@gmail.com">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABcVBMVEUAAACmMynhS0Dk4tLjTkLf3c6qMifj4NDa18n39u3u7eHn5tfdSDr7+vLr6NzXQzfaQjXy8OXcyr3baFv08+jjTkLcRDjfUETcST39//765+HOzsHHvK6yqp/qfXLcT0SqMieqMiapMCOpMCPiTUCtrKLt6t3m5NXi39Dw7uLp59jy8ebhSj7k4dKnMij19Onq6NuqMijdRTjeSDzjUUXhRjvcQjapqZ/iQjeoOjDjV0zr7N/4+O+qo5ne28zV0sWwsKXIxrqssaft7uGpoZf6//fm6trr4dTc2cr1+/Ds8uX16+DDwbTv49jo3M/a18i7uq7kZlvw9enx5tvoxreutavpoZXz9+zw8ubHxLfliXzlfnPcPTGiMinw1crRz8LNy73ut6zns6bnrJ+vnpSxlIrqjYO7d23lc2jCbWLHYFTiX1POVUrUTULEPDH03NPn0MPwzcLxw7nrmo/jloq3hnzleG3hpZalnpW3iX7ibWKJOxaQAAAAJHRSTlMA8PHw8fDy8PDw8PBB8PD98fD6+vDBwP378PDw8PDw8MK+QkGqsv4tAAADVUlEQVRYw+2UWVvaQBRA695WW6179y2QEINAyCSRIIoUBNSKuO9rXeve2uXX994ZkmEJ8NJHjvl8O+fOXBMfNWjQoJiugdZ3r14+Q55Q+vv7XwBPKc+RTqCF0tHZ29cz2FXit2qacnGXTEYpAcoI4AO8SFAGRFH0+/1i6nBoS9e7iwsDGqAI99GkW4D7GEhJGzplsCjQqiECOb1Ooh+tEUgt9W3pKgZ6KgMCiewnM+AynwUsGgiyQCr1a2hLVd0DAqCQ45lkacBbFEjFNnVdZQG1LCAUMBduky4BGUktXcB4BCpXTcUB6mr0IcJhIMp9HkjJP8J6uODrV9slAVRtFLI5l6m8QeLmVFfDEEC6Q9vlATSda1zc0YKPB4KJg4geZj6MH90eHa0IRFY0IjCIcu9bBd8JJOD4apgFzO6TsVGgMhDYWTDta5inOxl+g+zNXzNMAf/7N6NKYCY5c6wo9jUiB/k19hJYiUPNVAoB/Wx8arxaIBDN7EdM+xpkYy6PfnZ6g5CCb17+9Hg87gElMrMaCGSuH4hziIWlvGVllxZMRaEBop8fTdUK4OuzGlgRnF0KK4nEioA+BmB7HvBrBUaAQOYWRtq73Nw0icB82B7o7oFmGliEALK6eEycQ0CLHoCoZwbz6wd8a3m+SwB83N4U8+sHfEB+58FUuE/U86NlMOsF1lBnZC3Ype2bwyfOeKNGYG7NV8CyvOzPRwOwveVJPr9GYIT79gskKLA9j+Mb/AQhtwDXEQu+QNO8/DNVMr52wGK2/Q1ne/tge5MY4EeoHphOcBl02StPxCd2lz3gV54gVCMQhAfwSvG4FAxKOVAm8ad4ByHXgGVPB2D87AT+J5bFvfIjfBkLVQswW7bHixQ5neMLMJxAu0sgSG0ZHjae4veL/r2SPY5XC+DmED4efUScdw5R9QRE+4p6+XhEkiS/tDdp1NoBDwRxPNO5j4n5nFEvgD6OF/l49B3i9AaGUfUKoEvxdalcp4kY/prIGYBbAL5ZDIg4nusA01khFoul1z2ugQEWkNbXYzK3QeeyJKXBT8d2c3bgQ1Gga1hRwlrv7K5tc91poJ6eB2Y9vzHQ/hlEXhhsbn7/pq2zhdNRoM3msc3rt03t7R8/PWrQoMH/5B9B+XiEd+LRgAAAAABJRU5ErkJggg" alt="gmail" class="contact-icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ushuz_" title="@ushuz_">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAilBMVEUAAABVrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO4XpcQoAAAALXRSTlMA7vr2FHXh2B8OAr2fiU4IBOnRzGI/MSXEfeWomYNxsZOPZ1s6K2xWUUlFGbfMHfMlAAACBUlEQVRYw+3W2ZKqMBAG4A77vguyKSrj3u//eqfgnGPiMAmBi6maqvkuKf82STdG+PWNrGvreY2+sVfmP0rXUFVi1pkGjFA2Xiv4X9y+SuR1AaPAEed1FVnmbXgY3WrF/VcfW1Hc8fATJdPuBxMRcxj5iEfg63CK4MCHUZSgqMIReZ4RjIpxhzqvfYSX3zsQXodYj6Mugq8cOHHFy0+eofRDD/Av14IpLeYVMIbOXoApgNUFJi4osoNBTx/UluwOkDk3S2XaU2rwxuXH1SPQNlKGzpZwUm7e2Lw+5eObuMtlCrTMq6LgJ2m7see2cADKw6nq6Z9yy/aQx2ebbfDOKSbIUwJjo+Jiu1c6OIVwI7jUiXndzCY4L65Au3gfR1tZmFfp0FoqrmBGdFi2uMIeqDOusGPHoFpRIAdGtuIIQmDVuFQHb+ztyimgFfbL8kk0vb7Iuh5QWplIT1SsTe6/S7DpzylKamHCR0p6AayH7BFwr0F93RBRkbtuBigtkcwfgMOSG8c0BJ7QVyQ6UIBA7s01Q7mD2CMoGyL8LZ4VNoKNZLNxJzME65/NR1dRJ0gAYsVOOArJx5cp2xkWbhc3fyt+mzvO//TrM91uzUqZm/+Av3APZ1V6KNx7Ix4fo3zADEtPeWnVzWyQkZcumX73/lyAvMd917iJERNCKjPd+1lvw68f4Q8YGVpBzoSkKwAAAABJRU5ErkJggg" alt="twitter" class="contact-icon">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.douban.com/people/hsz17531">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAANlBMVEUAAAAAdxH///+Au4hAmU2/3cQQgCAwkT4giC9gqmpws3nf7uHP5tKfzKZQoluv1bXv9/CPxJc8QZy/AAAAAXRSTlMAQObYZgAAAMpJREFUWMPtl0kOwyAMRRnDlJD2/pctMhtqWgT1hqS8FfqyHuMCM8Y2/jMbSxhOwJDmz2vgRJZgLoEUA8h7CqwawE55jXMIlOzA1YKxq9RL0BagCoRcgiVIyMs85UsLrEpAVVAIDbFPI4MFGAFYlD4gRWFL4N9DI/oF4VPtPiA4BBDLzOZs7xJEARxl5tG+akF9CKGMzpyZPoGr94sX1RbYb4LYFuAj3yoB7xU8odzhV3A2BVoMoe8ocHIIN+sv7U8F1NaX3HyT2/8XT4YXgbFyTFsAAAAASUVORK5CYII" alt="douban" class="contact-icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ushuz">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAllBMVEUAAAAXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRYXFRaeuVikAAAAMXRSTlMAD/rp3F4J96CaQCrkzb5NIPNuZRqvfXQVBe3Hq6aQiDff14J5UjLUjSQHA7aiSJRYSmMv2QAAApZJREFUWMPN1tlyqkAQBuBfWWQxKBwU0Yi4J2bt93+5k6LI0IMDtHVuzneXKtLl9Ez/M+gyd3aLqxUTxdZ1sXPmeMRb4O+pZe8Hb5BZHadkND2uBP+eFhPqNClS9MuzmHrFWY4elwMNOlzQKRmTwDiBmftMQs8uDEYbEtuMDP//RA94uqvgbughm/YqFvSgBTQZPSwDU6r9Cy7OdtJ5ELfOJVC7WUK52ao5VT9PazJYn6rOqWbbN1VgqT56qbekICIr8nZZkmQ7L7KIqKgb/6I+XqrRb36zow61M9fTQR1gp1nR7yc+KZ8Y9EmKX1dnEzDDoBmbijlfVOUPBv0h0luWW9T4wqAvali5+klqGwc9EelL/uCjXmJQyUPjAwBfwRICS74GIOSx60LA5aEdak09QeSkbVvB/nqFyCs1CryzFUCIreEdNikRhCJSbL4JWwht2YyDpYcHIY9lDLSYE+IBCvq3HhBfgg0hmy2BN3HsQsRl02BpwxVAJNDGl9+oO4js+D2LI38HvYleUPz9dNTz5BsC33qirIixXUEL98SsWhHlY5DfjsAjcUtJHvEWVJHE+b2rcH3ShPixIY3dc7mcbdJs2GUXBTO/PtbXZG4MouxACr9K82kVR+HPJ+qLvZfNbuwBdV5up4a3b84vq/in3Mrm6WBOAMNFmF/V32UTNSMwI9OT45q3pmMSsl0qoHmhe8Hd4XhnkzIzvgq6Dp1rN9tafthr+9m5QTMnxXjsw7gezi4jaonD1hGhyllc4Gx+eEzOkgLmp0xSR0wpKZDAwBnXORktFpv1qKfA2OkIS4saPQWszvBNI0mBKEW3JB4qECfolf6OTQpORaeXYkjoVc1cGQqMvRAS6elA2/s3weGU4n/0F498RcyRNKEeAAAAAElFTkSuQmCC" alt="github" class="contact-icon">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="fin">♥ Built with Love</div>
+</body>
+</html>
