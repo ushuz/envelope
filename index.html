@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>ushuz's</title>
   <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAQMAAACQp+OdAAAABlBMVEUAAAD///+l2Z/dAAAAG0lEQVQoz2OgK+D/z8Dw/8MoAzcDCChm0BMAACK9h3mwQvwSAAAAAElFTkSuQmCC">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
   <style>
 html {
-  font-family: "Lucida Grande", "Helvetica Neue", Calibri, sans-serif;
-  font-size: 1.25em;
-  min-width: 320px;
+  font: 1.2rem/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-width: 20rem;
+}
+h2, h5 {
+  font-family: "Lucida Grande";
 }
 ol, ul {
   list-style: none;
@@ -24,77 +26,62 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.main {
+.layout {
   margin: auto;
-  max-width: 480px;
+  max-width: 30rem;
 }
 @media (max-width: 533px) {
-  .main {
+  .layout {
     max-width: 90%;
   }
 }
 .fin {
   color: #ccc;
-  font-size: .6em;
+  font-size: .6rem;
   margin: 40px 0 20px 0;
   text-align: center;
 }
-#contact-list li {
+#contact li {
   display: inline-block;
-  margin: 0 .3em;
+  margin: 0 .3rem;
 }
 .contact-icon {
   width: 24px;
 }
 .chn {
-  font-size: .8em;
-  font-family: "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei";
+  font: .8rem "PingFang SC", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei";
 }
-#portfolio-list {
-  /*font-family: 'Source Sans Pro', sans-serif;*/
-}
-#portfolio-list li {
+#portfolio li {
   border-bottom: 1px #ccc dotted;
 }
-#portfolio-list li:first-child {
+#portfolio li:first-child {
   border-top: 1px #ccc dotted;
 }
 .project-name {
   font-family: Georgia, serif;
-  font-size: 1.1em;
-  /*font-weight: bold;*/
-  margin-top: 15px;
+  font-size: 1.25rem;
+  margin-top: .6rem;
 }
 .project-desc {
-  font-size: 0.9em;
+  font-size: .9rem;
+  margin: .4rem 0 .8rem;
 }
-#skills li {
-  margin: 10px 0;
-  padding: 10px;
-}
-.progress {
-  background: #ddd;
-  border-radius: 2px;
+#inventory li, #skills li {
   display: inline-block;
-  float: right;
-  height: 24px;
-  width: 70%;
 }
-@media (max-width: 414px) {
-  .progress {
-    width: 65%;
-  }
-}
-@media (max-width: 360px) {
-  .progress {
-    width: 60%;
-  }
-}
-.progress span {
-  background: #000;
-  border-radius: 2px;
+#inventory li::after, #skills li::after {
+  content: " /";
   display: inline-block;
-  height: 100%;
+  white-space: pre-wrap;
+}
+#inventory li:last-child:after, #skills li:last-child:after {
+  display: none;
+}
+#inventory li.retired {
+  text-decoration: line-through;
+}
+#skills h5 {
+  margin: .6rem 0;
 }
   </style>
   <script>
@@ -104,53 +91,100 @@ a:hover {
   </script>
 </head>
 <body>
-  <div class="main">
+  <div class="layout">
     <section id="about">
       <h2>About</h2>
       <p>Hi, I'm <b>ushuz</b> online, <b>John Hu</b> (<b class="chn">胡<span title="shù" style="cursor:help;border-bottom:1px dotted;">澍</span>拯</b>) in the real world.</p>
-      <p>I'm fond of simple and adorable stuff. Building things with Python and other tools I like always makes me thrilled.</p>
-      <p>I believe technology smooths our lives.</p>
+      <p>I'm fond of simple and adorable stuff. Building things that smooths our lives with Python and other tools I like always makes me thrilled.</p>
+    </section>
+    <section id="inventory">
+      <h2>Inventory</h2>
+      <ul>
+        <li class="retired">Nokia 5070</li>
+        <li class="retired">Nokia E5</li>
+        <li class="retired">Gateway NV47H49C</li>
+        <li class="retired">iPhone 5c</li>
+        <li class="retired">MacBook Pro 13″ (Mid 2014)</li>
+        <li class="retired">iPhone 6</li>
+        <li>PlayStation 4</li>
+        <li>iPhone 7</li>
+        <li>Nintendo Switch</li>
+        <li>iPad Pro 10.5″</li>
+        <li>Alienware Aurora R7</li>
+        <li>MacBook Pro 13″ (2018)</li>
+      </ul>
     </section>
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Battery Included</h2>
+      <h5>Future Linguist</h5>
       <ul>
-        <li><div class="progress"><span style="width:75%"></span></div><span class="skill">Python</span></li>
-        <li><div class="progress"><span style="width:50%"></span></div><span class="skill">JavaScript</span></li>
-        <li><div class="progress"><span style="width:45%"></span></div><span class="skill">CSS</span></li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Go</li>
+      </ul>
+      <h5>Day-to-day</h5>
+      <ul>
+        <li>Ansible</li>
+        <li>Docker</li>
+        <li>Git</li>
+        <li>Grafana</li>
+        <li>G Suite</li>
+        <li>GitHub</li>
+        <li>Notion</li>
+        <li>Slack</li>
+        <li>Sublime Text</li>
+        <li>Virtual Studio Code</li>
+      </ul>
+      <h5>Battle Tested</h5>
+      <ul>
+        <li>Docker Swarm Mode</li>
+        <li>Elastic Stack</li>
+        <li>JuiceFS</li>
+        <li>Memcached</li>
+        <li>MySQL</li>
+        <li>NGINX</li>
+        <li>Redis</li>
+      </ul>
+      <h5>Up in the Air</h5>
+      <ul>
+        <li>UCloud</li>
+        <li>Alibaba Cloud</li>
+        <li>Amazon Web Service</li>
+        <li>Google Cloud</li>
       </ul>
     </section>
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <ul id="portfolio-list">
+      <ul>
         <li>
           <div class="project-name"><a href="https://github.com/ushuz/letsencrypt">letsencrypt</a></div>
-          <div class="project-desc"><p>Yet another simple <a href="https://letsencrypt.org/" rel="nofollow" target="_blank">Let's Encrypt</a> client.</p></div>
+          <div class="project-desc">Yet another simple <a href="https://letsencrypt.org/" rel="nofollow" target="_blank">Let's Encrypt</a> client.</div>
         </li>
         <li>
           <div class="project-name"><a href="https://github.com/ushuz/autumn">autumn</a></div>
-          <div class="project-desc"><p>A <b>Pythonic</b> MySQL ORM, almost.</p></div>
+          <div class="project-desc">A <b>Pythonic</b> MySQL ORM, almost.</div>
         </li>
         <li>
           <div class="project-name"><a href="/noven">Noven</a></div>
-          <div class="project-desc"><p>A Tornado-based JWXT enhancement including SMS notification, Weixin support, mobile-friendly UI, etc. Available in BJFU and ZJU.</p></div>
+          <div class="project-desc">A Tornado-based JWXT enhancement including SMS notification, Weixin support, mobile-friendly UI, etc. Available in BJFU and ZJU.</div>
         </li>
         <li>
           <div class="project-name"><a href="https://github.com/ushuz/weixin-simulator">weixin-simulator</a></div>
-          <div class="project-desc"><p>A tkinter GUI used for Weixin MP development.</p></div>
+          <div class="project-desc">A tkinter GUI used for Weixin MP development.</div>
         </li>
         <li>
           <div class="project-name"><a href="https://github.com/ushuz/mockingbird">mockingbird</a></div>
-          <div class="project-desc"><p>An AngularJS-based Weixin simulator.</p></div>
+          <div class="project-desc">An AngularJS-based Weixin simulator.</div>
         </li>
         <li>
           <div class="project-name"><a href="https://github.com/ushuz/autolecture">autolecture</a></div>
-          <div class="project-desc"><p>Generate Outlook appointments according to class timetable. My first work written in Python.</p></div>
+          <div class="project-desc">Generate Outlook appointments according to class timetable. My first work written in Python.</div>
         </li>
       </ul>
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <ul id="contact-list">
+      <ul>
         <li>
           <a href="mailto:hszqqq12@gmail.com" title="hszqqq12@gmail.com">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABcVBMVEUAAACmMynhS0Dk4tLjTkLf3c6qMifj4NDa18n39u3u7eHn5tfdSDr7+vLr6NzXQzfaQjXy8OXcyr3baFv08+jjTkLcRDjfUETcST39//765+HOzsHHvK6yqp/qfXLcT0SqMieqMiapMCOpMCPiTUCtrKLt6t3m5NXi39Dw7uLp59jy8ebhSj7k4dKnMij19Onq6NuqMijdRTjeSDzjUUXhRjvcQjapqZ/iQjeoOjDjV0zr7N/4+O+qo5ne28zV0sWwsKXIxrqssaft7uGpoZf6//fm6trr4dTc2cr1+/Ds8uX16+DDwbTv49jo3M/a18i7uq7kZlvw9enx5tvoxreutavpoZXz9+zw8ubHxLfliXzlfnPcPTGiMinw1crRz8LNy73ut6zns6bnrJ+vnpSxlIrqjYO7d23lc2jCbWLHYFTiX1POVUrUTULEPDH03NPn0MPwzcLxw7nrmo/jloq3hnzleG3hpZalnpW3iX7ibWKJOxaQAAAAJHRSTlMA8PHw8fDy8PDw8PBB8PD98fD6+vDBwP378PDw8PDw8MK+QkGqsv4tAAADVUlEQVRYw+2UWVvaQBRA695WW6179y2QEINAyCSRIIoUBNSKuO9rXeve2uXX994ZkmEJ8NJHjvl8O+fOXBMfNWjQoJiugdZ3r14+Q55Q+vv7XwBPKc+RTqCF0tHZ29cz2FXit2qacnGXTEYpAcoI4AO8SFAGRFH0+/1i6nBoS9e7iwsDGqAI99GkW4D7GEhJGzplsCjQqiECOb1Ooh+tEUgt9W3pKgZ6KgMCiewnM+AynwUsGgiyQCr1a2hLVd0DAqCQ45lkacBbFEjFNnVdZQG1LCAUMBduky4BGUktXcB4BCpXTcUB6mr0IcJhIMp9HkjJP8J6uODrV9slAVRtFLI5l6m8QeLmVFfDEEC6Q9vlATSda1zc0YKPB4KJg4geZj6MH90eHa0IRFY0IjCIcu9bBd8JJOD4apgFzO6TsVGgMhDYWTDta5inOxl+g+zNXzNMAf/7N6NKYCY5c6wo9jUiB/k19hJYiUPNVAoB/Wx8arxaIBDN7EdM+xpkYy6PfnZ6g5CCb17+9Hg87gElMrMaCGSuH4hziIWlvGVllxZMRaEBop8fTdUK4OuzGlgRnF0KK4nEioA+BmB7HvBrBUaAQOYWRtq73Nw0icB82B7o7oFmGliEALK6eEycQ0CLHoCoZwbz6wd8a3m+SwB83N4U8+sHfEB+58FUuE/U86NlMOsF1lBnZC3Ype2bwyfOeKNGYG7NV8CyvOzPRwOwveVJPr9GYIT79gskKLA9j+Mb/AQhtwDXEQu+QNO8/DNVMr52wGK2/Q1ne/tge5MY4EeoHphOcBl02StPxCd2lz3gV54gVCMQhAfwSvG4FAxKOVAm8ad4ByHXgGVPB2D87AT+J5bFvfIjfBkLVQswW7bHixQ5neMLMJxAu0sgSG0ZHjae4veL/r2SPY5XC+DmED4efUScdw5R9QRE+4p6+XhEkiS/tDdp1NoBDwRxPNO5j4n5nFEvgD6OF/l49B3i9AaGUfUKoEvxdalcp4kY/prIGYBbAL5ZDIg4nusA01khFoul1z2ugQEWkNbXYzK3QeeyJKXBT8d2c3bgQ1Gga1hRwlrv7K5tc91poJ6eB2Y9vzHQ/hlEXhhsbn7/pq2zhdNRoM3msc3rt03t7R8/PWrQoMH/5B9B+XiEd+LRgAAAAABJRU5ErkJggg" alt="gmail" class="contact-icon">
