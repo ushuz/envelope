@@ -77,7 +77,7 @@ ol, ul {
 #inventory li:last-child:after, #skills li:last-child:after {
   display: none;
 }
-#inventory li.retired {
+#inventory li[retired] {
   text-decoration: line-through;
 }
 #skills h5 {
@@ -186,18 +186,19 @@ ol, ul {
     <section id="inventory">
       <h2>Inventory</h2>
       <ul>
-        <li enlist="2008FEB" class="retired">Nokia 5070</li>
-        <li enlist="2011JUN" class="retired">Nokia E5</li>
-        <li enlist="2011SEP" class="retired">Gateway NV47H49C</li>
+        <li enlist="2008FEB" retired>Nokia 5070</li>
+        <li enlist="2011JUN" retired>Nokia E5</li>
+        <li enlist="2011SEP" retired>Gateway NV47H49C</li>
         <li enlist="2013FEB">Kindle Paperwhite</li>
-        <li enlist="2013SUM" class="retired">Raspberry Pi 1 Model B</li>
-        <li enlist="2013OCT" class="retired">iPhone 5c</li>
-        <li enlist="2014NOV" class="retired">MacBook Pro 13″ (Mid 2014)</li>
+        <li enlist="2013SUM" retired>Raspberry Pi 1 Model B</li>
+        <li enlist="2013OCT" retired="2021APR">iPhone 5c</li>
+        <li enlist="2014NOV" retired="2018NOV">MacBook Pro 13″ (Mid 2014)</li>
         <li enlist="2014NOV">PlayStation 4</li>
-        <li enlist="2015FEB" class="retired">iPhone 6</li>
+        <li enlist="2015FEB" retired="2016DEC">iPhone 6</li>
         <li enlist="2015OCT">Sony MDR-XB950</li>
         <li enlist="2015DEC">Hue Go + Hue Birdge</li>
-        <li enlist="2016OCT" class="retired">iPhone 7</li>
+        <li enlist="2016OCT" retired="2021MAY">iPhone 7</li>
+        <li enlist="2016NOV">Leica SOFORT</li>
         <li enlist="2017MAR">Nintendo Switch</li>
         <li enlist="2017MAY">Sony SRS-XB10</li>
         <li enlist="2017JUN">AirPods</li>
@@ -207,8 +208,12 @@ ol, ul {
         <li enlist="2018NOV">MacBook Pro 13″ (2018)</li>
         <li enlist="2018NOV">Apple Watch Series 4</li>
         <li enlist="2020FEB">AirPods Pro</li>
-        <li enlist="2020MAY">iPhone SE (2020)</li>
+        <li enlist="2020MAY" retired="2023OCT">iPhone SE (2020)</li>
         <li enlist="2022DEC">Bose QuietComfort 45</li>
+        <li enlist="2023MAR">Logitech MX Master 3S</li>
+        <li enlist="2023APR">Logitech MX Mechanical Mini</li>
+        <li enlist="2023OCT">iPhone 15</li>
+        <!-- <li enlist="2023NOV">iFlight Defender 16</li> -->
       </ul>
     </section>
     <section id="contact">
